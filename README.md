@@ -38,7 +38,5 @@ npm run typecheck
 - No form, map, scheduling tool, or third-party integration has been added.
 - The primary site logo now uses:
   `/workspace/public/brand/hitmen-primary-logo.png`
-- The separate competition/swag brand asset is preserved at:
-  `/workspace/public/brand/hitmen-competition-swag-logo.pdf`
 - The favicon treatment can also be updated later in:
   `/workspace/src/app/icon.svg`

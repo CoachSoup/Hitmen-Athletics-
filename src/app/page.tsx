@@ -20,27 +20,7 @@ export const metadata = buildMetadata(
 export default function Home() {
   return (
     <>
-      <section className="border-b border-white/10 bg-black/80 pt-6 sm:pt-8">
-        <div className="mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8">
-          <div className="logo-frame rounded-[2rem] p-2 sm:p-3">
-            <div className="relative overflow-hidden rounded-[1.6rem] border border-[var(--accent)]/25 bg-black">
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(242,200,75,0.8),transparent)]" />
-              <object
-                data="/brand/hitmen-competition-swag-logo.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-                type="application/pdf"
-                aria-label="Highpoint Hitmen banner"
-                className="relative block h-[140px] w-full bg-black sm:h-[180px] lg:h-[220px]"
-              >
-                <div className="flex h-full items-center justify-center px-6 text-center text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">
-                  Highpoint Hitmen banner asset
-                </div>
-              </object>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-16 pt-12 sm:pb-20 sm:pt-16">
+      <section className="pb-16 pt-16 sm:pb-20 sm:pt-20">
         <Container>
           <SectionHeading
             eyebrow="Program lineup"
