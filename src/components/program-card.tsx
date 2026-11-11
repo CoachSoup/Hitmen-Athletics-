@@ -16,6 +16,8 @@ export function ProgramCard({ program }: ProgramCardProps) {
         {program.shortDescription}
       </p>
 
+      <p className="mt-5 text-sm leading-7 text-slate-200">{program.audience}</p>
+
       <ul className="mt-6 space-y-3 text-sm leading-6 text-slate-200">
         {program.focusAreas.slice(0, 3).map((item) => (
           <li key={item} className="flex gap-3">
@@ -24,6 +26,17 @@ export function ProgramCard({ program }: ProgramCardProps) {
           </li>
         ))}
       </ul>
+
+      <div className="mt-6 flex flex-wrap gap-2">
+        {program.idealFor.slice(0, 1).map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs tracking-wide text-slate-200"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
 
       <ButtonLink href={`/programs/${program.slug}`} className="mt-8 w-fit">
         Explore {program.name}

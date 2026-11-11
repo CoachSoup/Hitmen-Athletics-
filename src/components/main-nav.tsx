@@ -37,7 +37,7 @@ export function MainNav({ stacked = false }: MainNavProps) {
               <Link
                 href={item.href}
                 aria-current={active ? "page" : undefined}
-                className={`inline-flex rounded-full px-4 py-2 text-sm font-medium tracking-wide motion-safe:transition-colors motion-reduce:transition-none ${
+                className={`inline-flex ${stacked ? "w-full justify-start" : ""} rounded-full px-4 py-2 text-sm font-medium tracking-wide motion-safe:transition-colors motion-reduce:transition-none ${
                   active
                     ? "bg-[var(--accent-soft)] text-white ring-1 ring-[var(--accent)]/70"
                     : "text-slate-300 motion-safe:hover:bg-white/5 motion-safe:hover:text-white"

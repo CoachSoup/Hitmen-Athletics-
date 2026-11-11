@@ -3,7 +3,12 @@ import { Container } from "@/components/container";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { buildMetadata } from "@/lib/metadata";
-import { contactPlaceholders, launchReviewItems } from "@/lib/site";
+import {
+  contactFlowCards,
+  contactPlaceholders,
+  inquiryPreparationChecklist,
+  launchReviewItems,
+} from "@/lib/site";
 
 export const metadata = buildMetadata(
   "Contact",
@@ -22,7 +27,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact structure"
         title="A polished contact page without placeholder claims or fake integrations."
-        description="This route gives Hitmen Athletics a launch-safe framework now while leaving space for real communication details once they are verified and approved."
+        description="This route now feels more operational by helping families understand what to prepare, how the eventual inquiry flow should work, and exactly which public details are still pending approval."
         aside={
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
@@ -66,7 +71,27 @@ export default function ContactPage() {
 
       <section className="border-y border-white/10 bg-black/10 py-16 sm:py-20">
         <Container>
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+          <SectionHeading
+            eyebrow="Prepare the inquiry"
+            title="Make the next step clearer even before a live form exists."
+            description="A stronger contact page should help people arrive prepared. That reduces confusion now and makes a future real workflow easier to design."
+          />
+
+          <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+            <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+                Suggested inquiry prep
+              </p>
+              <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+                {inquiryPreparationChecklist.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
             <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
                 Suggested workflow
@@ -85,7 +110,34 @@ export default function ContactPage() {
                 ))}
               </ol>
             </article>
+          </div>
+        </Container>
+      </section>
 
+      <section className="py-16 sm:py-20">
+        <Container>
+          <SectionHeading
+            eyebrow="How it should flow"
+            title="A clearer placeholder journey from interest to response."
+            description="These cards make the eventual handoff feel intentional now, while staying explicit that the final communication path is still to be decided."
+          />
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {contactFlowCards.map((card) => (
+              <article key={card.title} className="surface-card rounded-[1.5rem] p-6">
+                <h2 className="text-xl font-semibold text-white">{card.title}</h2>
+                <p className="mt-4 text-sm leading-7 text-slate-300">
+                  {card.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-y border-white/10 bg-black/10 py-16 sm:py-20">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
                 Before launch
@@ -98,6 +150,31 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
+              <div className="field-note mt-6 rounded-2xl p-5 text-sm leading-7 text-slate-200">
+                Keep all placeholder messaging explicit until the team confirms the
+                real contact destination, response method, and any approved
+                registration handoff.
+              </div>
+            </article>
+
+            <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+                Where to go next
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
+                Use the site to narrow the conversation before operations go live.
+              </h2>
+              <p className="mt-4 text-base leading-8 text-slate-300">
+                Families can explore the program pages to identify the best-fit
+                lane first, then return here once the organization has approved its
+                real public inquiry path.
+              </p>
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <ButtonLink href="/programs/7v7">Compare programs</ButtonLink>
+                <ButtonLink href="/" variant="secondary">
+                  Revisit homepage overview
+                </ButtonLink>
+              </div>
             </article>
           </div>
         </Container>

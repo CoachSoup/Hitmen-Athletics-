@@ -8,10 +8,14 @@ export type Program = {
   heroDescription: string;
   audience: string;
   seoDescription: string;
+  atAGlance: { label: string; value: string }[];
   focusAreas: string[];
+  sessionFlow: { title: string; description: string }[];
   outcomes: string[];
   experience: string[];
   idealFor: string[];
+  nextSteps: string[];
+  pendingDetails: string[];
 };
 
 export const programs: Program[] = [
@@ -26,11 +30,42 @@ export const programs: Program[] = [
     audience: "Receivers, defensive backs, and quarterbacks preparing for competitive offseason work.",
     seoDescription:
       "Explore Hitmen Athletics 7v7 training focused on timing, competition, and game-speed decision making for skill athletes.",
+    atAGlance: [
+      {
+        label: "Primary lens",
+        value: "Team timing, live competition, and football decision making.",
+      },
+      {
+        label: "Best fit when",
+        value: "Athletes want reps that connect technique directly to spacing, tempo, and communication.",
+      },
+      {
+        label: "Pending public details",
+        value: "Roster size, schedule structure, and registration workflow still need verified approval.",
+      },
+    ],
     focusAreas: [
       "Route depth, spacing, and timing",
       "Coverage recognition and leverage awareness",
       "Ball tracking, finishing, and recovery",
       "Communication, tempo, and sideline-to-huddle consistency",
+    ],
+    sessionFlow: [
+      {
+        title: "Install the details",
+        description:
+          "Start with the technical language, spacing rules, and movement details that shape cleaner competitive reps.",
+      },
+      {
+        title: "Translate into live looks",
+        description:
+          "Progress into scenarios that force athletes to apply recognition, timing, and communication under pace.",
+      },
+      {
+        title: "Compete with intent",
+        description:
+          "Use live sequences to reinforce decision making and finish rather than collecting empty reps.",
+      },
     ],
     outcomes: [
       "Sharper understanding of how individual technique connects to team execution.",
@@ -47,6 +82,16 @@ export const programs: Program[] = [
       "Players who want more than isolated skill work",
       "Families looking for a clear pathway from training to competition",
     ],
+    nextSteps: [
+      "Confirm whether the athlete needs a competition-first environment right now.",
+      "Approve the real registration and roster workflow before making this page operational.",
+      "Add verified scheduling details once the team is ready to publish them.",
+    ],
+    pendingDetails: [
+      "Official schedule or seasonal cadence",
+      "Verified registration destination or inquiry path",
+      "Any published roster, age-group, or tournament details",
+    ],
   },
   {
     slug: "speed-lab",
@@ -59,11 +104,42 @@ export const programs: Program[] = [
     audience: "Multi-sport athletes and football players focused on movement quality and explosive development.",
     seoDescription:
       "Explore Hitmen Athletics Speed Lab training focused on acceleration mechanics, posture, and transferable speed development.",
+    atAGlance: [
+      {
+        label: "Primary lens",
+        value: "Movement quality, acceleration mechanics, and transferable speed development.",
+      },
+      {
+        label: "Best fit when",
+        value: "Athletes need a strong performance base before or alongside more sport-specific work.",
+      },
+      {
+        label: "Pending public details",
+        value: "Real scheduling, facility notes, and booking flow still need approval before publication.",
+      },
+    ],
     focusAreas: [
       "Acceleration mechanics and projection angles",
       "Posture, rhythm, and front-side organization",
       "Force application, intent, and recovery positions",
       "Transfer from drill precision to open movement",
+    ],
+    sessionFlow: [
+      {
+        title: "Build movement awareness",
+        description:
+          "Introduce the positions, rhythms, and cues that help athletes understand what efficient speed should feel like.",
+      },
+      {
+        title: "Refine projection and posture",
+        description:
+          "Coach the shapes and timing that let acceleration stay intentional instead of rushed or disconnected.",
+      },
+      {
+        title: "Carry it into open movement",
+        description:
+          "Create a bridge from drill execution to more dynamic expressions of speed and athletic intent.",
+      },
     ],
     outcomes: [
       "Better awareness of the positions and rhythms that support efficient speed.",
@@ -80,6 +156,16 @@ export const programs: Program[] = [
       "Players who want speed instruction without position-specific overload",
       "Families seeking a high-clarity entry point into the Hitmen training ecosystem",
     ],
+    nextSteps: [
+      "Decide if the athlete's first need is movement development before a more specialized lane.",
+      "Confirm how any future testing, onboarding, or registration details should be presented publicly.",
+      "Publish verified operational details only after the team finalizes them.",
+    ],
+    pendingDetails: [
+      "Real testing or onboarding workflow, if desired",
+      "Official session timing and location details",
+      "Approved registration or contact destination",
+    ],
   },
   {
     slug: "position-lab",
@@ -92,11 +178,42 @@ export const programs: Program[] = [
     audience: "Football athletes looking for focused technical work tied directly to position demands.",
     seoDescription:
       "Explore Hitmen Athletics Position Lab training built around technical details, movement precision, and position-specific development.",
+    atAGlance: [
+      {
+        label: "Primary lens",
+        value: "Position-specific movement detail, leverage, and technical confidence.",
+      },
+      {
+        label: "Best fit when",
+        value: "Athletes need more targeted role-based coaching than a broad performance lane provides.",
+      },
+      {
+        label: "Pending public details",
+        value: "Exact role groupings, scheduling, and intake process still need verified public decisions.",
+      },
+    ],
     focusAreas: [
       "Footwork, leverage, and transition quality",
       "Hand placement, body control, and recovery positions",
       "Visual processing and reaction to live cues",
       "Position language that connects drills to game application",
+    ],
+    sessionFlow: [
+      {
+        title: "Define the position language",
+        description:
+          "Align the athlete around the details, cues, and movement standards that matter most for the role.",
+      },
+      {
+        title: "Train the technical rep",
+        description:
+          "Focus on leverage, footwork, hands, and transitions in ways that stay specific without losing athletic freedom.",
+      },
+      {
+        title: "Pressure the decisions",
+        description:
+          "Add live cues or reactive layers so technique holds up when the rep becomes less predictable.",
+      },
     ],
     outcomes: [
       "Improved command of the technical details that separate clean reps from empty reps.",
@@ -112,6 +229,16 @@ export const programs: Program[] = [
       "Athletes refining the details of their primary position",
       "Players who want individualized-feeling coaching inside a scalable system",
       "Families comparing program options based on development goals instead of hype",
+    ],
+    nextSteps: [
+      "Confirm that the athlete's main need is role-specific detail rather than broad speed or competition exposure.",
+      "Decide which public-facing role groupings should be shown once approved.",
+      "Add real intake and schedule details only after the team signs off on them.",
+    ],
+    pendingDetails: [
+      "Approved role groupings or age splits, if applicable",
+      "Official schedule, location, and registration path",
+      "Any future coach-bio or staff assignment content",
     ],
   },
 ];
