@@ -39,9 +39,7 @@ export function Logo({
           aria-label="Hitmen Athletics logo"
           className={`pointer-events-none block border-0 bg-transparent ${mediaClassName}`}
         >
-          <div className="flex h-full w-full items-center justify-center px-4 text-center text-sm font-semibold uppercase tracking-[0.24em] text-[var(--accent)]">
-            Hitmen Athletics
-          </div>
+          <div aria-hidden="true" className="h-full w-full" />
         </object>
       </span>
       <span className={`flex flex-col ${variant === "masthead" ? "items-center text-center" : ""}`}>
