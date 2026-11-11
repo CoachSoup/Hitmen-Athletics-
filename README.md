@@ -37,6 +37,6 @@ npm run typecheck
   - `tel:+18014040798`
 - No form, map, scheduling tool, or third-party integration has been added.
 - The primary site logo now uses:
-  `/workspace/public/brand/hitmen-primary-logo.png`
+  `/workspace/public/brand/hitmen-replacement-logo.pdf`
 - The favicon treatment can also be updated later in:
   `/workspace/src/app/icon.svg`

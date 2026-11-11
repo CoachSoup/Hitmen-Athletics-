@@ -2,7 +2,7 @@
 
 Current assets in use or preserved in this repository:
 
-- `hitmen-primary-logo.png` - the live primary site logo used in
+- `hitmen-replacement-logo.pdf` - the live primary site logo asset used in
   `/workspace/src/components/logo.tsx`
 
 Notes:
