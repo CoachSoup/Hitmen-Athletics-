@@ -8,7 +8,14 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[rgba(0,0,0,0.94)] backdrop-blur-xl">
       <Container className="py-4 sm:py-5">
         <div className="flex flex-col gap-4">
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center gap-3">
+            <div className="text-center">
+              <p className="text-[1.5rem] font-semibold uppercase tracking-[0.24em] text-white sm:text-[1.95rem] lg:text-[2.45rem]">
+                Hitmen Athletics
+              </p>
+              <div className="mx-auto mt-3 h-px w-24 bg-[linear-gradient(90deg,transparent,rgba(242,200,75,0.9),transparent)]" />
+            </div>
+
             <Logo variant="masthead" />
           </div>
 
