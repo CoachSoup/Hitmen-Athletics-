@@ -2,18 +2,33 @@ import Link from "next/link";
 
 import { Container } from "@/components/container";
 import { Logo } from "@/components/logo";
-import { launchReviewItems, navigationItems } from "@/lib/site";
+import { launchReviewItems, navigationItems, publicContactLinks } from "@/lib/site";
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-white/10 bg-black/20">
       <Container className="grid gap-10 py-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
         <div className="space-y-5">
-          <Logo showPlaceholderLabel />
+          <Logo showSupportLabel />
           <p className="max-w-2xl text-sm leading-7 text-slate-300">
-            This Phase 1 build uses placeholder brand and contact content only.
-            Replace those items with verified production details before launch.
+            The primary site logo and direct contact links are now live. The
+            separate competition/swag brand asset is preserved for future use, and
+            location, registration, and other operational details still need final
+            approval before launch.
           </p>
+          <div className="flex flex-col gap-2 text-sm text-slate-200">
+            {publicContactLinks
+              .filter((item) => "href" in item)
+              .map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  className="w-fit font-medium motion-safe:transition-colors motion-safe:hover:text-white"
+                >
+                  {item.title}: {item.description}
+                </a>
+              ))}
+          </div>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2">

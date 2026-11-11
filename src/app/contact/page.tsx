@@ -5,20 +5,20 @@ import { SectionHeading } from "@/components/section-heading";
 import { buildMetadata } from "@/lib/metadata";
 import {
   contactFlowCards,
-  contactPlaceholders,
   inquiryPreparationChecklist,
   launchReviewItems,
+  publicContactLinks,
 } from "@/lib/site";
 
 export const metadata = buildMetadata(
   "Contact",
-  "Review the placeholder-only contact page structure for Hitmen Athletics before verified operational details are added."
+  "Contact Hitmen Athletics through the live public email and phone details while remaining operational placeholders stay explicit."
 );
 
 const inquirySteps = [
-  "Approve the public email, phone, or registration destination that should receive inquiries.",
-  "Confirm which questions families should answer first so a future form or workflow can be structured correctly.",
-  "Decide whether the next phase should support email only, a form provider, scheduling software, or manual registration.",
+  "Use the live public email or phone link for direct outreach.",
+  "Include the athlete's program interest, goals, and any timing details that matter for the conversation.",
+  "Layer in any future form or registration workflow only after the team approves it.",
 ] as const;
 
 export default function ContactPage() {
@@ -26,22 +26,33 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact structure"
-        title="A polished contact page without placeholder claims or fake integrations."
-        description="This route now feels more operational by helping families understand what to prepare, how the eventual inquiry flow should work, and exactly which public details are still pending approval."
+        title="Direct contact is now live, with remaining operational details still clearly pending."
+        description="Families can now reach Hitmen Athletics through public email and phone contact while the site continues to keep unverified logistics like location, schedules, forms, and registration handoff explicit."
         aside={
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
               Important note
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
-              No form handler, map, email address, phone number, or social link has
-              been invented or wired into this phase.
+              Live email and phone contact are now in place. Form handlers, maps,
+              schedules, registration tooling, and social links are still pending.
             </p>
           </div>
         }
       >
         <div className="flex flex-col gap-4 sm:flex-row">
-          <ButtonLink href="/programs/speed-lab">Review program pages</ButtonLink>
+          <a
+            href="mailto:AdamSisouphanh5@gmail.com"
+            className="inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_16px_40px_rgba(240,196,105,0.22)] motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 motion-safe:hover:bg-[var(--accent-strong)] motion-reduce:transition-none"
+          >
+            Email Adam
+          </a>
+          <a
+            href="tel:+18014040798"
+            className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-white motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 motion-safe:hover:border-[var(--accent)] motion-safe:hover:bg-white/10 motion-reduce:transition-none"
+          >
+            Call or text
+          </a>
           <ButtonLink href="/about" variant="secondary">
             Review brand positioning
           </ButtonLink>
@@ -51,18 +62,26 @@ export default function ContactPage() {
       <section className="pb-16 sm:pb-20">
         <Container>
           <SectionHeading
-            eyebrow="What needs approval"
-            title="Swap these placeholders for verified operating details."
-            description="The site is ready for real contact content, but it intentionally keeps each public touchpoint abstract until the Hitmen team signs off on what belongs here."
+            eyebrow="Public contact details"
+            title="The live contact options now available on the site."
+            description="Email and phone are public and actionable in this phase. Any remaining operational details stay explicit until the team decides they are ready to publish."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {contactPlaceholders.map((item) => (
+            {publicContactLinks.map((item) => (
               <article key={item.title} className="surface-card rounded-[1.5rem] p-6">
                 <h2 className="text-xl font-semibold text-white">{item.title}</h2>
                 <p className="mt-4 text-sm leading-7 text-slate-300">
                   {item.description}
                 </p>
+                {"href" in item ? (
+                  <a
+                    href={item.href}
+                    className="mt-6 inline-flex text-sm font-semibold uppercase tracking-[0.18em] text-[var(--accent)] motion-safe:transition-colors motion-safe:hover:text-[var(--accent-strong)]"
+                  >
+                    {item.ctaLabel}
+                  </a>
+                ) : null}
               </article>
             ))}
           </div>
@@ -73,8 +92,8 @@ export default function ContactPage() {
         <Container>
           <SectionHeading
             eyebrow="Prepare the inquiry"
-            title="Make the next step clearer even before a live form exists."
-            description="A stronger contact page should help people arrive prepared. That reduces confusion now and makes a future real workflow easier to design."
+            title="Make the next step clearer now that direct contact is live."
+            description="The page should still help people arrive prepared. That reduces confusion today and makes any future form or registration workflow easier to design later."
           />
 
           <div className="mt-10 grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
@@ -151,9 +170,9 @@ export default function ContactPage() {
                 ))}
               </ul>
               <div className="field-note mt-6 rounded-2xl p-5 text-sm leading-7 text-slate-200">
-                Keep all placeholder messaging explicit until the team confirms the
-                real contact destination, response method, and any approved
-                registration handoff.
+                Keep only the truly unresolved items as placeholders now: location,
+                schedules, response expectations, and any approved registration
+                handoff.
               </div>
             </article>
 
@@ -166,11 +185,16 @@ export default function ContactPage() {
               </h2>
               <p className="mt-4 text-base leading-8 text-slate-300">
                 Families can explore the program pages to identify the best-fit
-                lane first, then return here once the organization has approved its
-                real public inquiry path.
+                lane first, then use the live email or phone contact while the rest
+                of the operational flow continues to mature.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href="/programs/7v7">Compare programs</ButtonLink>
+                <a
+                  href="mailto:AdamSisouphanh5@gmail.com"
+                  className="inline-flex items-center justify-center rounded-full bg-[var(--accent)] px-5 py-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-950 shadow-[0_16px_40px_rgba(240,196,105,0.22)] motion-safe:transition-all motion-safe:duration-300 motion-safe:hover:-translate-y-0.5 motion-safe:hover:bg-[var(--accent-strong)] motion-reduce:transition-none"
+                >
+                  Start by email
+                </a>
                 <ButtonLink href="/" variant="secondary">
                   Revisit homepage overview
                 </ButtonLink>

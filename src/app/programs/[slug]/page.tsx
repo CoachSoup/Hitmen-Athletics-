@@ -265,7 +265,7 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
               approved contact or registration path that should receive the inquiry.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href="/contact">Review contact placeholders</ButtonLink>
+              <ButtonLink href="/contact">View contact options</ButtonLink>
               <ButtonLink href="/" variant="secondary">
                 Back to homepage overview
               </ButtonLink>

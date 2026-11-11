@@ -32,7 +32,7 @@ export default function Home() {
             </p>
             <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
               <li>Richer page structure for homepage, About, Contact, and all three program routes.</li>
-              <li>Clearer next-step content without pretending registration, contact, or scheduling data exists yet.</li>
+              <li>Clearer next-step content without pretending registration or scheduling data exists yet.</li>
               <li>Shared components, mobile polish, accessibility support, and explicit placeholder handling.</li>
             </ul>
           </div>
@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex flex-col gap-4 sm:flex-row">
           <ButtonLink href="/programs/7v7">Explore programs</ButtonLink>
           <ButtonLink href="/contact" variant="secondary">
-            Review contact setup
+            View contact options
           </ButtonLink>
         </div>
       </PageHero>
@@ -88,7 +88,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Inquiry path"
             title="What the decision journey should feel like."
-            description="Even before live contact channels exist, the site can still make the next move obvious: choose a lane, gather the right details, and be ready for the eventual inquiry workflow."
+            description="With live email and phone contact now in place, the site can make the next move obvious: choose a lane, gather the right details, and be ready for any future registration workflow."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
@@ -163,7 +163,7 @@ export default function Home() {
                 ))}
               </ul>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href="/contact">Review inquiry placeholders</ButtonLink>
+                <ButtonLink href="/contact">View contact options</ButtonLink>
                 <ButtonLink href="/about" variant="secondary">
                   Review site story structure
                 </ButtonLink>

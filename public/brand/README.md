@@ -1,11 +1,16 @@
-# Placeholder brand asset
+# Hitmen Athletics brand assets
 
-`hitmen-placeholder-mark.svg` is a temporary stand-in so the site can ship with a
-cohesive header, footer, and favicon treatment during Phase 1.
+Current assets in use or preserved in this repository:
 
-Before launch:
+- `hitmen-primary-logo.png` - the live primary site logo used in
+  `/workspace/src/components/logo.tsx`
+- `hitmen-competition-swag-logo.pdf` - a separate competition / swag brand asset
+  preserved for future use
 
-1. Replace this SVG with the approved Hitmen Athletics mark.
-2. Keep the filename the same, or update `/workspace/src/components/logo.tsx` if the
-   asset path changes.
-3. Replace `/workspace/src/app/icon.svg` if a different favicon treatment is desired.
+Notes:
+
+1. The primary site logo is already active in the header and footer.
+2. The competition / swag PDF is intentionally preserved as a separate asset and is
+   not tied to a specific program in the current site.
+3. `/workspace/src/app/icon.svg` can still be replaced later if a dedicated favicon
+   treatment is desired.

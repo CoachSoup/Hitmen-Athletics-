@@ -44,27 +44,30 @@ export const culturePillars = [
   {
     title: "Launch-ready structure",
     description:
-      "Placeholder-only contact and logo content keeps the build production-safe until official assets and details are approved.",
+      "The real site logo and direct contact channels are live, while location, registration, and operational details stay explicit until they are approved.",
   },
 ] as const;
 
 export const launchReviewItems = [
-  "Replace the placeholder logo asset with the official Hitmen Athletics brand mark.",
-  "Add verified contact details, response workflow, and any approved registration destination.",
+  "Decide whether the browser icon should keep its current temporary treatment or switch to a finalized favicon asset.",
+  "Add verified location details, response workflow expectations, and any approved registration destination.",
   "Review page copy with coaching leadership for tone, terminology, and any program-specific factual updates.",
   "Confirm whether a future phase should add forms, scheduling, roster content, or media galleries.",
+  "Decide if the separate competition/swag brand asset belongs on a future merch, competition, or brand page.",
 ] as const;
 
-export const contactPlaceholders = [
+export const publicContactLinks = [
   {
-    title: "Email contact",
-    description:
-      "Add the official inbox or routed coaching email after it has been approved for public use.",
+    title: "Email",
+    description: "AdamSisouphanh5@gmail.com",
+    href: "mailto:AdamSisouphanh5@gmail.com",
+    ctaLabel: "Send an email",
   },
   {
-    title: "Phone or text line",
-    description:
-      "Insert the verified athlete or parent contact number only after the team confirms ownership and support hours.",
+    title: "Phone or text",
+    description: "(801) 404-0798",
+    href: "tel:+18014040798",
+    ctaLabel: "Call or text",
   },
   {
     title: "Training location and hours",
@@ -82,7 +85,7 @@ export const athleteJourneySteps = [
   {
     title: "Prepare the right inquiry details",
     description:
-      "Bring the athlete's current goals, preferred program, preferred contact method, and any timing considerations once real intake channels are approved.",
+      "Bring the athlete's current goals, preferred program, and any timing considerations before reaching out by email or phone.",
   },
   {
     title: "Move into the approved registration flow",
@@ -166,7 +169,7 @@ export const storyPlaceholderCards = [
 export const inquiryPreparationChecklist = [
   "Which program the athlete is most interested in right now.",
   "The main development goals that matter most to the athlete or family.",
-  "The preferred way to be contacted once the team approves live channels.",
+  "Whether email or phone is the better way to reach you back.",
   "Any availability or timing details needed for the first response.",
 ] as const;
 
@@ -184,6 +187,6 @@ export const contactFlowCards = [
   {
     title: "3. Confirm the approved response path",
     description:
-      "Once the team selects its real email, form, or registration process, that final step can replace the current placeholder callouts cleanly.",
+      "Use the live email or phone contact now, then layer in any future registration or form workflow only when the team approves it.",
   },
 ] as const;
