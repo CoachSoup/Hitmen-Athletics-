@@ -26,7 +26,7 @@ export function MainNav({ stacked = false }: MainNavProps) {
         className={
           stacked
             ? "flex flex-col gap-2"
-            : "flex flex-wrap items-center justify-end gap-2 lg:gap-3"
+            : "flex flex-wrap items-center justify-center gap-2 lg:gap-3"
         }
       >
         {navigationItems.map((item) => {
