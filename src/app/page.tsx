@@ -1,6 +1,5 @@
 import { ButtonLink } from "@/components/button-link";
 import { Container } from "@/components/container";
-import { PageHero } from "@/components/page-hero";
 import { ProgramCard } from "@/components/program-card";
 import { SectionHeading } from "@/components/section-heading";
 import { buildMetadata } from "@/lib/metadata";
@@ -21,38 +20,20 @@ export const metadata = buildMetadata(
 export default function Home() {
   return (
     <>
-      <PageHero
-        eyebrow="Phase 1 launch"
-        title="Build athletes who move with speed, detail, and confidence."
-        description="Hitmen Athletics now has a stronger App Router foundation designed to help athletes and families understand the training lanes, compare the right next step, and act on the live inquiry path today while future operational additions remain optional."
-        aside={
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
-              What this preview supports
-            </p>
-            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
-              <li>Richer page structure for homepage, About, Contact, and all three program routes.</li>
-              <li>Clearer next-step content without pretending registration or scheduling data exists yet.</li>
-              <li>Shared components, mobile polish, accessibility support, and explicit placeholder handling.</li>
-            </ul>
-          </div>
-        }
-      >
-        <div className="flex flex-col gap-4 sm:flex-row">
-          <ButtonLink href="/programs/7v7">Explore programs</ButtonLink>
-          <ButtonLink href="/contact" variant="secondary">
-            View contact options
-          </ButtonLink>
-        </div>
-      </PageHero>
-
-      <section className="pb-16 pt-6 sm:pb-20">
+      <section className="pb-16 pt-16 sm:pb-20 sm:pt-20">
         <Container>
           <SectionHeading
             eyebrow="Program lineup"
             title="Three clear development lanes for athletes and families."
             description="Each route is powered by shared structured data so the site can expand cleanly with real schedules, registration, staffing, and media later without duplicating page logic."
           />
+
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <ButtonLink href="/programs/7v7">Explore programs</ButtonLink>
+            <ButtonLink href="/contact" variant="secondary">
+              View contact options
+            </ButtonLink>
+          </div>
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
             {programs.map((program) => (

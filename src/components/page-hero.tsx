@@ -28,7 +28,7 @@ export function PageHero({
             <h1 className="mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
               {title}
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-zinc-100/90">
               {description}
             </p>
             {children ? <div className="mt-8">{children}</div> : null}
