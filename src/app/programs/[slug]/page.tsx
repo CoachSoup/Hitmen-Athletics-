@@ -12,6 +12,8 @@ type ProgramPageProps = {
   params: Promise<{ slug: string }>;
 };
 
+export const instant = false;
+
 export function generateStaticParams() {
   return programs.map((program) => ({ slug: program.slug }));
 }
