@@ -44,16 +44,16 @@ export const culturePillars = [
   {
     title: "Launch-ready structure",
     description:
-      "The real site logo and direct contact channels are live, while location, registration, and operational details stay explicit until they are approved.",
+      "The current launch uses the real logo and live direct contact channels, while location, registration, and other operational details can be layered in later.",
   },
 ] as const;
 
 export const launchReviewItems = [
-  "Decide whether the browser icon should keep its current temporary treatment or switch to a finalized favicon asset.",
-  "Add verified location details, response workflow expectations, and any approved registration destination.",
-  "Review page copy with coaching leadership for tone, terminology, and any program-specific factual updates.",
-  "Confirm whether a future phase should add forms, scheduling, roster content, or media galleries.",
-  "Decide if the separate competition/swag brand asset belongs on a future merch, competition, or brand page.",
+  "Decide later whether the browser icon should keep its current temporary treatment or switch to a finalized favicon asset.",
+  "Add location details, response workflow expectations, and any registration destination in a later update if needed.",
+  "Review page copy with coaching leadership over time for tone, terminology, and any program-specific factual updates.",
+  "Add forms, scheduling, roster content, or media galleries later if the team wants them.",
+  "Decide later if the separate competition/swag brand asset belongs on a merch, competition, or brand page.",
 ] as const;
 
 export const publicContactLinks = [
@@ -88,7 +88,7 @@ export const athleteJourneySteps = [
       "Bring the athlete's current goals, preferred program, and any timing considerations before reaching out by email or phone.",
   },
   {
-    title: "Move into the approved registration flow",
+    title: "Move into any future registration flow",
     description:
       "This phase stops before inventing a workflow, so the final handoff can support whatever real email, form, or registration tool the team chooses next.",
   },
@@ -116,12 +116,12 @@ export const nextPhaseModules = [
   {
     title: "Registration path",
     description:
-      "Pending approval of the real registration method, pricing display, and whether the team wants manual or integrated intake.",
+      "A later update can add the real registration method, pricing display, and any manual or integrated intake flow the team wants.",
   },
   {
     title: "Coach and founder profiles",
     description:
-      "Ready for future biographies, certifications, and trust-building story content once the team approves what belongs on the public site.",
+      "Ready for future biographies, certifications, and trust-building story content whenever the team wants to add it.",
   },
   {
     title: "Schedules, locations, and media",
@@ -139,7 +139,7 @@ export const aboutAudienceCards = [
   {
     title: "Families",
     description:
-      "Families get a clearer view of how to compare programs and what details the organization still needs to approve before public operations go live.",
+      "Families get a clearer view of how to compare programs and which details may still be added later as the public site evolves.",
   },
   {
     title: "Coaching leadership",
@@ -157,7 +157,7 @@ export const storyPlaceholderCards = [
   {
     title: "Coaching credentials",
     description:
-      "Insert verified experience, athlete outcomes, and staff profiles only after those facts are approved for public-facing use.",
+      "Insert verified experience, athlete outcomes, and staff profiles once those facts are ready for public-facing use.",
   },
   {
     title: "Facility and environment detail",
@@ -185,8 +185,8 @@ export const contactFlowCards = [
       "Use the richer program pages to narrow the best first conversation instead of pushing everyone into the same generic call to action.",
   },
   {
-    title: "3. Confirm the approved response path",
+    title: "3. Confirm the response path",
     description:
-      "Use the live email or phone contact now, then layer in any future registration or form workflow only when the team approves it.",
+      "Use the live email or phone contact now, then layer in any future registration or form workflow whenever the team wants it.",
   },
 ] as const;

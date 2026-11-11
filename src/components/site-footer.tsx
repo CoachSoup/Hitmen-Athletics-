@@ -13,8 +13,8 @@ export function SiteFooter() {
           <p className="max-w-2xl text-sm leading-7 text-slate-300">
             The primary site logo and direct contact links are now live. The
             separate competition/swag brand asset is preserved for future use, and
-            location, registration, and other operational details still need final
-            approval before launch.
+            location, registration, and other operational details can be added in
+            later updates.
           </p>
           <div className="flex flex-col gap-2 text-sm text-slate-200">
             {publicContactLinks
@@ -52,7 +52,7 @@ export function SiteFooter() {
 
           <div>
             <h2 className="text-sm font-semibold uppercase tracking-[0.24em] text-white">
-              Review before launch
+              Later update ideas
             </h2>
             <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-300">
               {launchReviewItems.map((item) => (

@@ -41,7 +41,7 @@ export const programs: Program[] = [
       },
       {
         label: "Pending public details",
-        value: "Roster size, schedule structure, and registration workflow still need verified approval.",
+        value: "Roster size, schedule structure, and registration workflow can be added later if the team wants them public.",
       },
     ],
     focusAreas: [
@@ -84,8 +84,8 @@ export const programs: Program[] = [
     ],
     nextSteps: [
       "Confirm whether the athlete needs a competition-first environment right now.",
-      "Approve the real registration and roster workflow before making this page operational.",
-      "Add verified scheduling details once the team is ready to publish them.",
+      "Add any future registration and roster workflow later if the team wants a more operational program page.",
+      "Add scheduling details later if they become useful to publish publicly.",
     ],
     pendingDetails: [
       "Official schedule or seasonal cadence",
@@ -115,7 +115,7 @@ export const programs: Program[] = [
       },
       {
         label: "Pending public details",
-        value: "Real scheduling, facility notes, and booking flow still need approval before publication.",
+        value: "Scheduling, facility notes, and any booking flow can be added later if needed for the public site.",
       },
     ],
     focusAreas: [
@@ -159,7 +159,7 @@ export const programs: Program[] = [
     nextSteps: [
       "Decide if the athlete's first need is movement development before a more specialized lane.",
       "Confirm how any future testing, onboarding, or registration details should be presented publicly.",
-      "Publish verified operational details only after the team finalizes them.",
+      "Add more operational details later if the team wants a fuller public intake flow.",
     ],
     pendingDetails: [
       "Real testing or onboarding workflow, if desired",
@@ -189,7 +189,7 @@ export const programs: Program[] = [
       },
       {
         label: "Pending public details",
-        value: "Exact role groupings, scheduling, and intake process still need verified public decisions.",
+        value: "Exact role groupings, scheduling, and intake process can be added later if the team wants them public.",
       },
     ],
     focusAreas: [
@@ -232,8 +232,8 @@ export const programs: Program[] = [
     ],
     nextSteps: [
       "Confirm that the athlete's main need is role-specific detail rather than broad speed or competition exposure.",
-      "Decide which public-facing role groupings should be shown once approved.",
-      "Add real intake and schedule details only after the team signs off on them.",
+      "Decide later which public-facing role groupings should be shown, if any.",
+      "Add intake and schedule details later if the team wants this page to become more operational.",
     ],
     pendingDetails: [
       "Approved role groupings or age splits, if applicable",

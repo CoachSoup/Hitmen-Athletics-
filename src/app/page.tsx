@@ -24,7 +24,7 @@ export default function Home() {
       <PageHero
         eyebrow="Phase 1 launch"
         title="Build athletes who move with speed, detail, and confidence."
-        description="Hitmen Athletics now has a stronger App Router foundation designed to help athletes and families understand the training lanes, compare the right next step, and prepare for a real inquiry flow once operational details are approved."
+        description="Hitmen Athletics now has a stronger App Router foundation designed to help athletes and families understand the training lanes, compare the right next step, and act on the live inquiry path today while future operational additions remain optional."
         aside={
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
@@ -136,7 +136,7 @@ export default function Home() {
                 Next-phase modules
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
-                The site now has obvious space for the operational pieces that are still pending.
+                The site now has obvious space for the operational pieces that can be added later.
               </h2>
               <div className="mt-6 space-y-4">
                 {nextPhaseModules.map((module) => (
@@ -152,7 +152,7 @@ export default function Home() {
 
             <div className="surface-card rounded-[1.75rem] p-7 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
-                Review checklist
+                Later update ideas
               </p>
               <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
                 {launchReviewItems.map((item) => (

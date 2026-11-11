@@ -79,7 +79,7 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
           <SectionHeading
             eyebrow="At a glance"
             title="The key context an athlete or family needs right away."
-            description="These detail cards make each program feel more operational and easier to compare while keeping all unverified logistics clearly marked as pending."
+            description="These detail cards make each program feel more operational and easier to compare while keeping later additions around logistics clearly separated from the current launch."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
@@ -204,7 +204,7 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
 
             <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
-                Pending operational details
+                Later operational additions
               </p>
               <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
                 {program.pendingDetails.map((item) => (
@@ -215,8 +215,8 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
                 ))}
               </ul>
               <div className="field-note mt-6 rounded-2xl p-5 text-sm leading-7 text-slate-200">
-                Keep these details as placeholders until the team confirms what
-                should be public-facing for this program.
+                These details can be layered in later if the team decides they
+                belong on the public-facing program page.
               </div>
             </article>
           </div>
@@ -257,12 +257,12 @@ export default async function ProgramPage({ params }: ProgramPageProps) {
               Next action
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
-              Ready to turn interest into a real inquiry once live operations are approved.
+              Ready to turn interest into a real inquiry today.
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
               This page now gives enough program detail to help an athlete or family
-              decide whether the lane feels right. The final missing piece is the
-              approved contact or registration path that should receive the inquiry.
+              decide whether the lane feels right. Live direct contact is already
+              in place, and any future registration path can be added later.
             </p>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href="/contact">View contact options</ButtonLink>

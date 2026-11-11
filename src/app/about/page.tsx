@@ -12,7 +12,7 @@ import {
 
 export const metadata = buildMetadata(
   "About",
-  "Learn how the Hitmen Athletics Phase 1 site frames coaching, athlete development, and launch-ready brand structure."
+  "Learn how the Hitmen Athletics Phase 1 site frames coaching, athlete development, and a launchable brand structure with room for later expansion."
 );
 
 export default function AboutPage() {
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <p className="mt-4 text-sm leading-7 text-slate-300">
               It positions the program philosophy, clarifies the audiences this
               site supports, and leaves room for real founder, coach, or staff
-              storytelling once that content is approved.
+              storytelling whenever the team is ready to add it.
             </p>
           </div>
         }
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Positioning"
             title="A Phase 1 story rooted in clarity and scalability."
-            description="The copy intentionally focuses on training identity, premium presentation, and athlete value so the team can approve specifics later without rewriting the full site."
+            description="The copy intentionally focuses on training identity, premium presentation, and athlete value so the team can add specifics later without rewriting the full site."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -83,7 +83,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Story roadmap"
             title="These sections are intentionally ready for real trust-building detail."
-            description="The page feels more complete today, but it still keeps all placeholders explicit where genuine biographies, outcomes, and facility information would need approval."
+            description="The page feels more complete today, while still making it obvious where genuine biographies, outcomes, and facility information could be added in future updates."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">

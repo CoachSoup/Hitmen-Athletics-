@@ -12,7 +12,7 @@ import {
 
 export const metadata = buildMetadata(
   "Contact",
-  "Contact Hitmen Athletics through the live public email and phone details while remaining operational placeholders stay explicit."
+  "Contact Hitmen Athletics through the live public email and phone details while optional future operational additions stay explicit."
 );
 
 const inquirySteps = [
@@ -26,8 +26,8 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact structure"
-        title="Direct contact is now live, with remaining operational details still clearly pending."
-        description="Families can now reach Hitmen Athletics through public email and phone contact while the site continues to keep unverified logistics like location, schedules, forms, and registration handoff explicit."
+        title="Direct contact is now live, with the rest of the operational stack able to grow later."
+        description="Families can now reach Hitmen Athletics through public email and phone contact while the site keeps later additions like location, schedules, forms, and registration handoff explicit."
         aside={
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
@@ -35,7 +35,7 @@ export default function ContactPage() {
             </p>
             <p className="mt-4 text-sm leading-7 text-slate-300">
               Live email and phone contact are now in place. Form handlers, maps,
-              schedules, registration tooling, and social links are still pending.
+              schedules, registration tooling, and social links can be added later.
             </p>
           </div>
         }
@@ -137,8 +137,8 @@ export default function ContactPage() {
         <Container>
           <SectionHeading
             eyebrow="How it should flow"
-            title="A clearer placeholder journey from interest to response."
-            description="These cards make the eventual handoff feel intentional now, while staying explicit that the final communication path is still to be decided."
+            title="A clearer path from interest to response."
+            description="These cards make the handoff feel intentional now while staying explicit about which additional operational layers may still be added later."
           />
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -159,7 +159,7 @@ export default function ContactPage() {
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
             <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
-                Before launch
+                Later updates
               </p>
               <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
                 {launchReviewItems.map((item) => (
@@ -170,9 +170,9 @@ export default function ContactPage() {
                 ))}
               </ul>
               <div className="field-note mt-6 rounded-2xl p-5 text-sm leading-7 text-slate-200">
-                Keep only the truly unresolved items as placeholders now: location,
-                schedules, response expectations, and any approved registration
-                handoff.
+                Keep only the truly unresolved items as later additions now:
+                location, schedules, response expectations, and any registration
+                handoff the team decides to add.
               </div>
             </article>
 
@@ -181,7 +181,7 @@ export default function ContactPage() {
                 Where to go next
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
-                Use the site to narrow the conversation before operations go live.
+                Use the site to narrow the conversation and reach out today.
               </h2>
               <p className="mt-4 text-base leading-8 text-slate-300">
                 Families can explore the program pages to identify the best-fit
