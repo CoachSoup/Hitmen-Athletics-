@@ -1,0 +1,107 @@
+import { ButtonLink } from "@/components/button-link";
+import { Container } from "@/components/container";
+import { PageHero } from "@/components/page-hero";
+import { SectionHeading } from "@/components/section-heading";
+import { buildMetadata } from "@/lib/metadata";
+import { contactPlaceholders, launchReviewItems } from "@/lib/site";
+
+export const metadata = buildMetadata(
+  "Contact",
+  "Review the placeholder-only contact page structure for Hitmen Athletics before verified operational details are added."
+);
+
+const inquirySteps = [
+  "Approve the public email, phone, or registration destination that should receive inquiries.",
+  "Confirm which questions families should answer first so a future form or workflow can be structured correctly.",
+  "Decide whether the next phase should support email only, a form provider, scheduling software, or manual registration.",
+] as const;
+
+export default function ContactPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Contact structure"
+        title="A polished contact page without placeholder claims or fake integrations."
+        description="This route gives Hitmen Athletics a launch-safe framework now while leaving space for real communication details once they are verified and approved."
+        aside={
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+              Important note
+            </p>
+            <p className="mt-4 text-sm leading-7 text-slate-300">
+              No form handler, map, email address, phone number, or social link has
+              been invented or wired into this phase.
+            </p>
+          </div>
+        }
+      >
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <ButtonLink href="/programs/speed-lab">Review program pages</ButtonLink>
+          <ButtonLink href="/about" variant="secondary">
+            Review brand positioning
+          </ButtonLink>
+        </div>
+      </PageHero>
+
+      <section className="pb-16 sm:pb-20">
+        <Container>
+          <SectionHeading
+            eyebrow="What needs approval"
+            title="Swap these placeholders for verified operating details."
+            description="The site is ready for real contact content, but it intentionally keeps each public touchpoint abstract until the Hitmen team signs off on what belongs here."
+          />
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {contactPlaceholders.map((item) => (
+              <article key={item.title} className="surface-card rounded-[1.5rem] p-6">
+                <h2 className="text-xl font-semibold text-white">{item.title}</h2>
+                <p className="mt-4 text-sm leading-7 text-slate-300">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="border-y border-white/10 bg-black/10 py-16 sm:py-20">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
+            <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+                Suggested workflow
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-white">
+                Decide how inquiries should move before adding automation.
+              </h2>
+              <ol className="mt-6 space-y-4 text-sm leading-7 text-slate-300">
+                {inquirySteps.map((step, index) => (
+                  <li key={step} className="flex gap-4">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--accent-soft)] font-semibold text-white ring-1 ring-[var(--accent)]/70">
+                      {index + 1}
+                    </span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </article>
+
+            <article className="surface-card rounded-[1.75rem] p-7 sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
+                Before launch
+              </p>
+              <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+                {launchReviewItems.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </Container>
+      </section>
+    </>
+  );
+}

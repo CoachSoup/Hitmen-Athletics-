@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Hitmen Athletics placeholder logo</title>
+  <desc id="desc">A temporary square logo mark with an H monogram and placeholder label.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0c469" />
+      <stop offset="100%" stop-color="#d5aa55" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="56" fill="#09111d" />
+  <path
+    d="M78 76h46v46h72V76h46v168h-46v-76h-72v76H78z"
+    fill="url(#gold)"
+  />
+  <rect x="44" y="252" width="232" height="32" rx="16" fill="rgba(255,255,255,0.08)" />
+  <text
+    x="160"
+    y="273"
+    fill="#f4f7fb"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    letter-spacing="3"
+    text-anchor="middle"
+  >
+    PLACEHOLDER
+  </text>
+</svg>

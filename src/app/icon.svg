@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="hitmenIcon" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0c469" />
+      <stop offset="100%" stop-color="#d5aa55" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#09111d" />
+  <path
+    d="M34 32h18v18h24V32h18v64H76V68H52v28H34z"
+    fill="url(#hitmenIcon)"
+  />
+</svg>
